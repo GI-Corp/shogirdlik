@@ -75,13 +75,13 @@
                 </div>
             </div>
         </section>
-        <section class="video">
+        <section class="video" id="about">
+            <div class="video__content--player">
+                <video src="img/video.MP4" class="scroll video__content--item" width="100%"></video>
+                <div class="video__content--player__preview"></div>
+            </div>
             <div class="container">
                 <div class="video__content">
-                    <div class="video__content--player">
-                        <video src="img/video.MP4" class="scroll video__content--item" width="100%" height="250px"></video>
-                        <div class="video__content--player__preview"></div>
-                    </div>
                     <h2 class="scroll video__content--title">ПРО КУРС</h2>
                     <p class="video__content--info scroll">SHOGIRDLIK - курс продюсирования визуала от Саида Фазылова. С нами вы научитесь создавать контент от А до Я! На курсе Вы узнаете секреты таких сфер, как креативная дирекция, мобилография и менеджмент визуального контента.Сможете понять, как развиваться в фэшн индустрии в живом формате!</p>
                     <p class="video__content--info video__content--info--last">SHOGIRDLIK - курс продюсирования визуала от Саида Фазылова. С нами вы научитесь создавать контент от А до Я! На курсе Вы узнаете секреты таких сфер, как креативная дирекция, мобилография и менеджмент визуального контента.Сможете понять, как развиваться в фэшн индустрии в живом формате!</p>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="coach">
+        <section class="coach" id="coach">
             <div class="container">
                 <div class="coach__content">
                     <img src="img/coach-img.png" alt="" class="scroll coach__content--img">
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section class="program">
+        <section class="program" id="program">
             <img src="img/program-bg.jpg" alt="" class="program__content--img scroll">
             <div class="container">
                 <div class="program__content">
@@ -207,7 +207,7 @@
             <img src="img/talk.png" alt="" class="program__content--img scroll">
             <div class="container">
                 <div class="program__content non-line">
-                    <h2 class="gallery__content--title scroll">ЖИВОЕ ОБЩЕНИЕ</h2>
+                    <h2 class="gallery__content--title scroll molniya">ЖИВОЕ ОБЩЕНИЕ</h2>
                     <p class="program__content--info program__content--info--left scroll">В век цифровых технологий мы запускаем курс SHOGIRDLIK 1.0 в оффлайн формате! Мы уверены, именно живое общение пойдет на пользу нашим ученикам, ведь мы гарантируем фундаментальный подход к обучению, много практических занятий в студии, а также полное погружение в процесс обучения. Фишка оффлайн курса заключается в прямой коммуникации и обратной связи. Креативный подход вдохновит вас двигаться вперед!</p>
                 </div>
             </div>
@@ -223,7 +223,7 @@
             <img src="img/vip.png" alt="" class="program__content--img scroll">
             <div class="container">
                 <div class="program__content non-line">
-                    <h2 class="gallery__content--title scroll">Студийная Практика</h2>
+                    <h2 class="gallery__content--title scroll molniya">Студийная Практика</h2>
                     <p class="program__content--info program__content--info--left scroll">Еще одной уникальной частью курса Shogirdlik 2.0 является то, что студенты, наряду с теоретическими знаниями, также получают практические навыки, находясь в живой атмосфере. Два занятия студенты проведут в студии, и во время одного из уроков они погрузятся в увлекательный и весьма прибыльный мир Мобилографии. </p>
                 </div>
             </div>
@@ -239,7 +239,7 @@
             <img src="img/practice.png" alt="" class="program__content--img scroll">
             <div class="container">
                 <div class="program__content non-line">
-                    <h2 class="gallery__content--title scroll">VIP Консультации</h2>
+                    <h2 class="gallery__content--title scroll molniya">VIP Консультации</h2>
                     <p class="program__content--info program__content--info--left scroll">Студенты, купившие VIP Пакет, получат возможность провести две индивидуальные консультации и еще один практический урок с коучем курса.</p>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <setion class="for">
+        <setion class="for" id="for">
             <div class="container">
                 <div class="for__content">
                     <h2 class="gallery__content--title scroll">Для кого этот курс?</h2>
@@ -288,7 +288,7 @@
                 </div>
             </div>
         </setion>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <div class="gallery__content">
                     <h2 class="gallery__content--title scroll">КАК ПРОШЕЛ КУРС <br> SHOGIRDLIK</h2>
@@ -352,7 +352,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__content scroll">
                     <img src="img/footer-logo.svg" alt="" class="footer__content--logo">
@@ -374,10 +374,12 @@
         </footer>
     </div>
     <div class="modal">
-        <a href="#!" class="modal__link">Главная</a>
-        <a href="#!" class="modal__link">Главная</a>
-        <a href="#!" class="modal__link">Главная</a>
-        <a href="#!" class="modal__link">Главная</a>
+        <a href="#about" class="modal__link">Про курс</a>
+        <a href="#coach" class="modal__link">Коуч курса</a>
+        <a href="#program" class="modal__link">Программа курса</a>
+        <a href="#for" class="modal__link">Для кого этот курс</a>
+        <a href="#gallery" class="modal__link">Как прошел курс</a>
+        <a href="#footer" class="modal__link">Контакты</a>
     </div>
     <script src="js/scroll.js"></script>
     <script src="js/swiper.js"></script>
