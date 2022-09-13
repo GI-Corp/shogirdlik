@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/shogirdlik/public_html/
+    - export DEPLOYPATH=/home/shogirdl/public_html/
     - /bin/cp -R * $DEPLOYPATH
