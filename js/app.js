@@ -15,15 +15,18 @@ var swiper = new Swiper(".mySwiper", {
 
 const modal = document.querySelector('.modal')
 const modalBtn = document.querySelector('.navbar__nav--burger')
+const body = document.querySelector('body')
 
 modalBtn.addEventListener('click', () => {
     modal.classList.toggle('active')
     modalBtn.classList.toggle('active')
+    body.classList.add('active')
 })
 
 modal.addEventListener('click', () => {
     modal.classList.remove('active')
     modalBtn.classList.remove('active')
+    body.classList.remove('active')
 })
 
 const spoilerText = document.querySelector('.video__content--info--last')
@@ -56,7 +59,7 @@ video.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    const deadline = new Date(2022, 09, 04);
+    const deadline = new Date(2022, 09, 05);
     // id таймера
     let timerId = null;
     // склонение числительных
